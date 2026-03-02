@@ -40,7 +40,7 @@ int main() {
     for (num_threads; num_threads < 9; num_threads *= 2) {
         std::cout << ">>>>>>>>>>>>  " << num_threads << "  <<<<<<<<<<<<<" << std::endl;
         for (int total_ops = 200000; total_ops <= 1000000; total_ops += 100000) {
-            std::cout << "\n========== " << total_ops << " operations" << std::endl;
+            std::cout << "========== " << total_ops << " operations" << std::endl;
 
             bank_balance = 0;
             balance = 0;
@@ -79,4 +79,5 @@ int main() {
     }
 
     return 0;
+
 }
